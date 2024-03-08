@@ -1,8 +1,8 @@
-export default function Home() {
+export default function Community() {
     return (
         <main>
             <h1 style={{ color: "white", textAlign: "center" }}>
-                Time to get started!
+                What is community?
             </h1>
         </main>
     );

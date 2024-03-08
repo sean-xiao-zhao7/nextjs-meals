@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-    title: "NextJS Licks",
+    title: "Sean Nodis' Food Blog",
     description: "Joints worth licking.",
 };
 

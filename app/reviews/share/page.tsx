@@ -1,8 +1,8 @@
-export default function Home() {
+export default function Share() {
     return (
         <main>
             <h1 style={{ color: "white", textAlign: "center" }}>
-                Time to get started!
+                Share this joint!
             </h1>
         </main>
     );
