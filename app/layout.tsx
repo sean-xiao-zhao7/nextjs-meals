@@ -56,7 +56,7 @@ export default function RootLayout({ children }: { children: any }) {
                         <Link href={"/reviews"}>Reviews</Link>
                     </li>
                     <li>
-                        <Link href={"/community"}>Share</Link>
+                        <Link href={"/share"}>Share</Link>
                     </li>
                 </menu>
                 {children}
