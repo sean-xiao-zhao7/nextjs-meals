@@ -1,4 +1,8 @@
+import Link from "next/link";
+
+// styles
 import "./globals.css";
+import "./styles/layouts/main-layout.css";
 
 export const metadata = {
     title: "Sean Nodis' Food Blog",
@@ -44,7 +48,17 @@ export default function RootLayout({ children }: { children: any }) {
                         ></path>
                     </svg>
                 </div>
-
+                <menu>
+                    <li>
+                        <Link href={"/"}>Home</Link>
+                    </li>
+                    <li>
+                        <Link href={"/reviews"}>Reviews</Link>
+                    </li>
+                    <li>
+                        <Link href={"/community"}>Share</Link>
+                    </li>
+                </menu>
                 {children}
             </body>
         </html>
