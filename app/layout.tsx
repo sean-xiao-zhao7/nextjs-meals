@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-    title: "NextLevel Food",
-    description: "Delicious meals, shared by a food-loving community.",
+    title: "NextJS Licks",
+    description: "Joints worth licking.",
 };
 
 export default function RootLayout({ children }: { children: any }) {
