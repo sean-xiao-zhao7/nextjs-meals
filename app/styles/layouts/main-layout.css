@@ -3,12 +3,12 @@ menu {
     flex-direction: row;
     width: 100%;
     margin: 0;
-    padding: 0 5rem;
-    background-color: #00000038;
+    padding: 0;
+    /* background-color: #00000038; */
 }
 menu li {
     list-style: none;
-    width: 12%;
+    width: 13%;
 }
 
 menu li a {
