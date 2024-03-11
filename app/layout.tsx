@@ -56,10 +56,12 @@ export default function RootLayout({ children }: { children: any }) {
                 <div id="menu-container">
                     <div id="main-logo-container">
                         <Image
-                            src={mainLogo.src}
+                            src={mainLogo}
                             alt="Main logo"
                             id="menu-logo"
                             fill={true}
+                            sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 5vw"
+                            priority={true}
                         />
                     </div>
                     <menu>
