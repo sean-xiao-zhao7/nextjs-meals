@@ -1,8 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 
 // styles
 import "./globals.css";
 import "./styles/layouts/main-layout.css";
+import "./styles/images/images.css";
+
+// images
+import mainLogo from "@/assets/logo_sean.png";
 
 export const metadata = {
     title: "Sean Nodis' Food Blog",
@@ -48,17 +53,27 @@ export default function RootLayout({ children }: { children: any }) {
                         ></path>
                     </svg>
                 </div>
-                <menu>
-                    <li>
-                        <Link href={"/"}>Home</Link>
-                    </li>
-                    <li>
-                        <Link href={"/reviews"}>Reviews</Link>
-                    </li>
-                    <li>
-                        <Link href={"/share"}>Share</Link>
-                    </li>
-                </menu>
+                <div id="menu-container">
+                    <div id="main-logo-container">
+                        <Image
+                            src={mainLogo.src}
+                            alt="Main logo"
+                            id="menu-logo"
+                            fill={true}
+                        />
+                    </div>
+                    <menu>
+                        <li>
+                            <Link href={"/"}>Home</Link>
+                        </li>
+                        <li>
+                            <Link href={"/reviews"}>Reviews</Link>
+                        </li>
+                        <li>
+                            <Link href={"/share"}>Share</Link>
+                        </li>
+                    </menu>
+                </div>
                 {children}
             </body>
         </html>

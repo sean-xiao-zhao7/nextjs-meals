@@ -1,10 +1,27 @@
+#menu-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+#main-logo-container {
+    border-radius: 100px;
+    position: relative;
+    width: 100px;
+    margin-right: 1rem;
+}
+
+#menu-logo {
+    border-radius: 15px;
+}
+
 menu {
     display: flex;
     flex-direction: row;
     width: 100%;
     margin: 0;
     padding: 0;
-    /* background-color: #00000038; */
 }
 menu li {
     list-style: none;
