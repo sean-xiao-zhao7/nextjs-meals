@@ -54,15 +54,18 @@ export default function RootLayout({ children }: { children: any }) {
                     </svg>
                 </div>
                 <div id="menu-container">
-                    <div id="main-logo-container">
-                        <Image
-                            src={mainLogo}
-                            alt="Main logo"
-                            id="menu-logo"
-                            fill={true}
-                            sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 5vw"
-                            priority={true}
-                        />
+                    <div id="menu-title-container">
+                        <div id="main-logo-container">
+                            <Image
+                                src={mainLogo}
+                                alt="Main logo"
+                                id="menu-logo"
+                                fill={true}
+                                sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 5vw"
+                                priority={true}
+                            />
+                        </div>
+                        <h1>Sean Nodis' Food Joints</h1>
                     </div>
                     <menu>
                         <li>
