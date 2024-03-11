@@ -6,10 +6,11 @@
 
 html {
     font-family: "Quicksand", sans-serif;
+    background: radial-gradient(#282c34, #282c34);
+    background-color: #282c34;
 }
 
 body {
-    background: radial-gradient(#282c34, #282c34);
     padding: 1rem 5%;
     margin: 0;
 }

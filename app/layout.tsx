@@ -5,6 +5,7 @@ import Image from "next/image";
 import "./globals.css";
 import "./styles/layouts/main-layout.css";
 import "./styles/images/images.css";
+import "./styles/headings/headings.css";
 
 // images
 import mainLogo from "@/assets/logo_sean.png";
