@@ -11,7 +11,7 @@ import "./styles/headings/headings.css";
 import mainLogo from "@/assets/logo_sean.png";
 
 export const metadata = {
-    title: "Sean Nodis' Food Blog",
+    title: "Sean Nodis' Food Joints",
     description: "Joints worth licking.",
 };
 
