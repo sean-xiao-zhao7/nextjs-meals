@@ -1,4 +1,5 @@
 import ReviewPreview from "@/components/reviews/ReviewPreview";
+import ImageSlideShow from "@/components/slideshow/image-slideshow";
 
 export default function App() {
     return (
@@ -13,6 +14,7 @@ export default function App() {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <ImageSlideShow />
             <div>
                 <ReviewPreview />
                 <ReviewPreview />
