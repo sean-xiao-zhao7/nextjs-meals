@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import Link from "next/link";
 
 const ReviewPreview = ({
@@ -20,7 +21,11 @@ const ReviewPreview = ({
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris \
                 nisi ut aliquip ex ea commodo consequat."}
             </p>
-            <Link href={`/reviews/${slug}`}>Check it out</Link>
+            <Button variant="outlined" className="small-text-button">
+                <Link href={`/reviews/${slug}`} className="button-link">
+                    Check it out
+                </Link>
+            </Button>
         </div>
     );
 };
