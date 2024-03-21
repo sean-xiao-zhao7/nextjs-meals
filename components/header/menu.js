@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 
 export default function Menu() {
     const path = usePathname();
+    console.log(path);
 
     return (
         <menu>
@@ -13,7 +14,7 @@ export default function Menu() {
             <li>
                 <Link
                     href={"/reviews"}
-                    className={path.startsWith("reviews") ? "active" : ""}
+                    className={path.startsWith("/reviews") ? "active" : ""}
                 >
                     Reviews
                 </Link>
@@ -21,7 +22,7 @@ export default function Menu() {
             <li>
                 <Link
                     href={"/share"}
-                    className={path.startsWith("share") ? "active" : ""}
+                    className={path.startsWith("/share") ? "active" : ""}
                 >
                     Share
                 </Link>

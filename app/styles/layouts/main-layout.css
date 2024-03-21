@@ -55,3 +55,7 @@ menu li a {
 menu li a:hover {
     background-color: #ffffff3d;
 }
+
+menu li a.active {
+    color: rgb(255, 148, 77);
+}
