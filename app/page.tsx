@@ -1,4 +1,4 @@
-import ReviewPreview from "@/components/reviews/ReviewPreview";
+// import ReviewPreview from "@/components/reviews/ReviewPreview";
 import ImageSlideShow from "@/components/slideshow/image-slideshow";
 
 export default function App() {
@@ -15,13 +15,6 @@ export default function App() {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <ImageSlideShow />
-            <div>
-                <ReviewPreview />
-                <ReviewPreview />
-                <ReviewPreview />
-                <ReviewPreview />
-                <ReviewPreview />
-            </div>
         </main>
     );
 }
