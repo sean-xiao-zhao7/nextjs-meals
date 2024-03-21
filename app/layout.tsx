@@ -1,5 +1,7 @@
-import Link from "next/link";
 import Image from "next/image";
+
+// components
+import Menu from "@/components/header/menu";
 
 // styles
 import "./globals.css";
@@ -68,18 +70,9 @@ export default function RootLayout({ children }: { children: any }) {
                         </div>
                         <h1>Sean Nodis' Food Joints</h1>
                     </div>
-                    <menu>
-                        <li>
-                            <Link href={"/"}>Home</Link>
-                        </li>
-                        <li>
-                            <Link href={"/reviews"}>Reviews</Link>
-                        </li>
-                        <li>
-                            <Link href={"/share"}>Share</Link>
-                        </li>
-                    </menu>
+                    <Menu />
                 </div>
+
                 {children}
             </body>
         </html>
