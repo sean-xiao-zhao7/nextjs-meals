@@ -2,7 +2,7 @@ const db = require("better-sqlite3")("seannodis_reviews.db");
 db.pragma("journal_mode = WAL");
 
 // define tables
-
+db.prepare(`DROP TABLE IF EXISTS reviews`);
 db.prepare(
     `CREATE TABLE IF NOT EXISTS reviews (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
