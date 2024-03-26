@@ -1,5 +1,6 @@
 import ReviewPreview from "@/components/reviews/ReviewPreview";
 import fetchAllReviews from "@/lib/fetch_reviews";
+
 export default function Reviews() {
     const allReviews = fetchAllReviews();
     return (
