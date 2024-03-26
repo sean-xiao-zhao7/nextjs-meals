@@ -1,7 +1,10 @@
-export default function ShareSlug() {
+import SingleReviewDetails from "@/components/reviews/SingleReviewDetails";
+
+export default function ShareSlug({ params }: { params: { slug: string } }) {
     return (
         <main>
-            <h1>Slug this joint!</h1>
+            <h1>Review: </h1>
+            <SingleReviewDetails slug={params.slug} />
         </main>
     );
 }
