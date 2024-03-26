@@ -1,11 +1,11 @@
 import ReviewPreview from "@/components/reviews/ReviewPreview";
 import fetchAllReviews from "@/lib/fetch_reviews";
+import { Suspense } from "react";
 
-export default function Reviews() {
-    const allReviews = fetchAllReviews();
+const ReviewsElement = async () => {
+    const allReviews = await fetchAllReviews();
     return (
-        <main>
-            <h1>Reviews</h1>
+        <>
             {allReviews.map(
                 (review: {
                     title: string;
@@ -21,6 +21,18 @@ export default function Reviews() {
                     />
                 )
             )}
+        </>
+    );
+};
+
+export default function Reviews() {
+    return (
+        <main>
+            <h1>Reviews</h1>
+            <p>Here are all reviews. </p>
+            <Suspense fallback={<p>Loading</p>}>
+                <ReviewsElement />
+            </Suspense>
         </main>
     );
 }
