@@ -2,16 +2,20 @@ const db = require("better-sqlite3")("seannodis_reviews.db");
 db.pragma("journal_mode = WAL");
 
 // define tables
-db.prepare(`DROP TABLE IF EXISTS reviews`);
-db.prepare(
-    `CREATE TABLE IF NOT EXISTS reviews (
+console.log(db.prepare(`DROP TABLE IF EXISTS reviews`).run());
+console.log(
+    db
+        .prepare(
+            `CREATE TABLE IF NOT EXISTS reviews (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     slug TEXT NOT NULL UNIQUE,
     title TEXT NOT NULL,
     description TEXT NOT NULL,
     joint_name TEXT NOT NULL
 )`
-).run();
+        )
+        .run()
+);
 
 // insert dummy reviews
 
@@ -55,7 +59,7 @@ const dummy_reviews = [
 ];
 
 const insert_one_review = db.prepare(`
-        insert into reviews (title, description, joint_name, slug) 
+        insert into reviews (title, description, joint_name, slug)
         values (@title, @description, @joint_name, @slug)
 `);
 const insertDummies = db.transaction((dummy_reviews) => {

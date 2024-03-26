@@ -13,6 +13,7 @@ export default function Reviews() {
                     slug: string;
                 }) => (
                     <ReviewPreview
+                        key={review.slug}
                         title={review.title}
                         intro={review.description}
                         slug={review.slug}
