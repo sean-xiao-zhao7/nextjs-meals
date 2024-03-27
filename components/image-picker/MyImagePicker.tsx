@@ -6,7 +6,6 @@ import { useState } from "react";
 
 const MyImagePicker = () => {
     const [imagePath, setImagePath] = useState<string>("");
-
     return (
         <>
             <div
@@ -37,13 +36,18 @@ const MyImagePicker = () => {
             {imagePath ? (
                 <div
                     style={{
-                        width: "300px",
-                        height: "300px",
+                        width: "100%",
+                        height: "500px",
                         position: "relative",
-                        objectFit: "cover",
+                        marginTop: "1rem",
                     }}
                 >
-                    <Image src={imagePath} alt="User picked image." />
+                    <Image
+                        src={imagePath}
+                        alt="User picked image."
+                        fill
+                        objectFit="contain"
+                    />
                 </div>
             ) : null}
         </>
