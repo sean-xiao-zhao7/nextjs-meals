@@ -20,10 +20,10 @@ export default function Menu() {
             </li>
             <li>
                 <Link
-                    href={"/share"}
-                    className={path.startsWith("/share") ? "active" : ""}
+                    href={"/social"}
+                    className={path.startsWith("/social") ? "active" : ""}
                 >
-                    Share
+                    Social
                 </Link>
             </li>
         </menu>

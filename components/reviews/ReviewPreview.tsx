@@ -26,6 +26,11 @@ const ReviewPreview = ({
                     Check it out
                 </Link>
             </Button>
+            <Button variant="outlined" className="small-text-button">
+                <Link href={`/reviews/${slug}/social`} className="button-link">
+                    Share it
+                </Link>
+            </Button>
         </div>
     );
 };
