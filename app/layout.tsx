@@ -60,7 +60,7 @@ export default function RootLayout({ children }: { children: any }) {
                 <div id="menu-container">
                     <div id="menu-title-container">
                         <div id="main-logo-container">
-                            <Link href="/">
+                            <Link href="/" id="main-logo-link-container">
                                 <Image
                                     src={mainLogo}
                                     alt="Main logo"
