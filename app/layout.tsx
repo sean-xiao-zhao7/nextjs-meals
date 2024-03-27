@@ -11,9 +11,10 @@ import "./styles/headings/headings.css";
 
 // images
 import mainLogo from "@/assets/logo_sean.png";
+import Link from "next/link";
 
 export const metadata = {
-    title: "Sean Nodis' Food Joints",
+    title: "SeanNodis' Food Joints",
     description: "Joints worth licking.",
 };
 
@@ -59,16 +60,20 @@ export default function RootLayout({ children }: { children: any }) {
                 <div id="menu-container">
                     <div id="menu-title-container">
                         <div id="main-logo-container">
-                            <Image
-                                src={mainLogo}
-                                alt="Main logo"
-                                id="menu-logo"
-                                fill={true}
-                                sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 5vw"
-                                priority={true}
-                            />
+                            <Link href="/">
+                                <Image
+                                    src={mainLogo}
+                                    alt="Main logo"
+                                    id="menu-logo"
+                                    fill={true}
+                                    sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 5vw"
+                                    priority={true}
+                                />
+                            </Link>
                         </div>
-                        <h1>Sean Nodis' Food Joints</h1>
+                        <Link href="/">
+                            <h1>SeanNodis' Food Joints</h1>
+                        </Link>
                     </div>
                     <Menu />
                 </div>

@@ -8,9 +8,6 @@ export default function Menu() {
     return (
         <menu>
             <li>
-                <Link href={"/"}>Home</Link>
-            </li>
-            <li>
                 <Link
                     href={"/reviews"}
                     className={path.startsWith("/reviews") ? "active" : ""}
