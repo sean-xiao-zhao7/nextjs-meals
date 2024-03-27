@@ -21,7 +21,7 @@ console.log(
 
 const dummy_reviews = [
     {
-        title: "Pho",
+        title: "Pho Ngoc Yen",
         description:
             "Best pho and best dining experience in Sauga, and perhaps beyond. It's hard to maintain consistent quality and service over large geographical and temporal gaps, and even the attitude of the staff oozes an air of sophistication that is peerless. A must visit of the food tour of GTA. Head and shoulders above the average Pho experience. Bravo to the owners.",
         joint_name: "Pho Ngoc Yen",
