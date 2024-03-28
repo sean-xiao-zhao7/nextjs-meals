@@ -3,7 +3,6 @@
 import { colors } from "@/app/styles/colors/colors";
 import Image from "next/image";
 import { useState } from "react";
-import MyButton from "../button/MyButton";
 
 const MyImagePicker = () => {
     const [imagePath, setImagePath] = useState<string>("");
@@ -36,7 +35,6 @@ const MyImagePicker = () => {
             </div>
             {imagePath ? (
                 <div style={{ marginTop: "1rem" }}>
-                    <MyButton text={"Upload to server"} />
                     <div
                         style={{
                             width: "100%",
