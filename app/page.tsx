@@ -12,7 +12,9 @@ export default function App() {
             <p>
                 The latest reviews are below, check Reviews on top to see all.
             </p>
-            <ImageSlideShow />
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <ImageSlideShow />
+            </div>
         </main>
     );
 }
