@@ -7,12 +7,10 @@ export const submitNewReviewHandler = async (formData: any) => {
     "use server";
 
     const newReview: ReviewType = {
-        title: formData,
-        description: "",
-        joint_name: "",
+        title: formData.get("title"),
+        description: formData.get("description"),
+        joint_name: formData.get("joint_name"),
         slug: "",
     };
-
     const result = addReviewDB(newReview);
-    console.log(result);
 };

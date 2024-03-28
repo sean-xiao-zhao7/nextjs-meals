@@ -1,5 +1,8 @@
-const db = require("better-sqlite3")("seannodis_reviews.db");
-db.pragma("journal_mode = WAL");
+import sql from "better-sqlite3";
+import xss from "xss";
+import slugify from "slugify";
+
+const db = sql("db/seannodis_reviews.db");
 
 export function addReviewDB(reviewDetails) {
     return db
@@ -10,6 +13,6 @@ export function addReviewDB(reviewDetails) {
             reviewDetails.title,
             xss(reviewDetails.description),
             reviewDetails.joint_name,
-            slugify(reviewDetails.title, { lower: true })
+            slugify(reviewDetails.title)
         );
 }
