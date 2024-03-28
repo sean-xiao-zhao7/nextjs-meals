@@ -1,7 +1,6 @@
 import MyImagePicker from "@/components/image-picker/MyImagePicker";
 import { fetchOneReviewBySlug } from "@/lib/fetch_reviews";
 import { notFound } from "next/navigation";
-import MyButton from "@/components/button/MyButton";
 
 export default async function Social({ params }: { params: { slug: string } }) {
     const review = await fetchOneReviewBySlug(params.slug);
