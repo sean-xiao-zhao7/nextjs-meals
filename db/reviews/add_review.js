@@ -8,8 +8,8 @@ export function addReviewDB(reviewDetails) {
         )
         .run(
             reviewDetails.title,
-            reviewDetails.description,
+            xss(reviewDetails.description),
             reviewDetails.joint_name,
-            slugify(reviewDetails.slug, { lower: true })
+            slugify(reviewDetails.title, { lower: true })
         );
 }

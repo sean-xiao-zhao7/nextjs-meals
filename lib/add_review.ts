@@ -1,6 +1,7 @@
 "use server";
 
 import ReviewType from "@/types/reviewType";
+import { addReviewDB } from "@/db/reviews/add_review";
 
 export const submitNewReviewHandler = async (formData: any) => {
     "use server";
@@ -11,4 +12,7 @@ export const submitNewReviewHandler = async (formData: any) => {
         joint_name: "",
         slug: "",
     };
+
+    const result = addReviewDB(newReview);
+    console.log(result);
 };
