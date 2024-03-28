@@ -6,8 +6,9 @@ export default async function Social({ params }: { params: { slug: string } }) {
     const review = await fetchOneReviewBySlug(params.slug);
     if (!review) notFound();
 
-    const onSubmitHandler = async () => {
+    const onSubmitHandler = async (formData: any) => {
         "use server";
+        console.log(formData.get("image-path"));
     };
 
     return (
