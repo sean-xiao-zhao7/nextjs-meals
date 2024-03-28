@@ -1,5 +1,5 @@
-// import ReviewPreview from "@/components/reviews/ReviewPreview";
 import ImageSlideShow from "@/components/slideshow/image-slideshow";
+import Reviews from "./reviews/page";
 
 export default function App() {
     return (
@@ -15,6 +15,7 @@ export default function App() {
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <ImageSlideShow />
             </div>
+            <Reviews />
         </main>
     );
 }
