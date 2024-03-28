@@ -10,7 +10,12 @@ export const submitNewReviewHandler = async (formData: any) => {
         title: formData.get("title"),
         description: formData.get("description"),
         joint_name: formData.get("joint_name"),
-        slug: "",
+        slug: formData.get("slug"),
     };
-    const result = addReviewDB(newReview);
+
+    try {
+        return addReviewDB(newReview);
+    } catch (e: any) {
+        console.log(e.message);
+    }
 };
