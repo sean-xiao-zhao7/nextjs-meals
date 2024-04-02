@@ -3,7 +3,7 @@ interface ReviewType {
     description: string;
     joint_name: string;
     slug: string;
-    image_path: string;
+    image: any;
 }
 
 export default ReviewType;

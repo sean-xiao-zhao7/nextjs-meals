@@ -10,7 +10,7 @@ export const submitNewReviewHandler = async (formData: any) => {
         description: formData.get("description"),
         joint_name: formData.get("joint_name"),
         slug: formData.get("slug"),
-        image_path: formData.get("image").name,
+        image: formData.get("image"),
     };
 
     try {
