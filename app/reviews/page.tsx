@@ -1,11 +1,14 @@
 import ReviewPreview from "@/components/reviews/ReviewPreview";
 import fetchAllReviews from "@/lib/fetch_reviews";
+import Link from "next/link";
 import { Suspense } from "react";
 
 const ReviewsElement = async () => {
     const allReviews = await fetchAllReviews();
+
     return (
         <>
+            <Link href="/reviews/add">Add Review</Link>
             {allReviews.map(
                 (review: {
                     title: string;

@@ -7,7 +7,7 @@ const MyButton = ({
     onClick,
 }: {
     href?: string;
-    text: string;
+    text?: string;
     onClick?: any;
 }) => {
     return (
