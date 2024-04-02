@@ -14,7 +14,7 @@ export const submitNewReviewHandler = async (formData: any) => {
     };
 
     try {
-        addReviewDB(newReview);
+        await addReviewDB(newReview);
         redirect("/reviews");
     } catch (e: any) {
         console.log(e.message);
