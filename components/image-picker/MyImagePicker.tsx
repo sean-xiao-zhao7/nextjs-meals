@@ -18,8 +18,8 @@ const MyImagePicker = () => {
             >
                 <input
                     type="file"
-                    id="image-path"
-                    name="image-path"
+                    id="image"
+                    name="image"
                     accept="image/png, image/jpeg"
                     onChange={(e: any) => {
                         const file = e.target.files[0];
