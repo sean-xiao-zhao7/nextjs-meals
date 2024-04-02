@@ -14,7 +14,11 @@ export async function addReviewDB(reviewDetails) {
     // save image to public folder
     const stream = fs.createWriteStream(`public/images/reviews/${filename}`);
     const bufferedImage = await reviewDetails.image.arrayBuffer();
-    stream.write(Buffer.from(bufferedImage));
+    stream.write(Buffer.from(bufferedImage), (err) => {
+        if (err) {
+            throw new Error("Cannot save image to disk.");
+        }
+    });
 
     return db
         .prepare(
@@ -25,6 +29,6 @@ export async function addReviewDB(reviewDetails) {
             xss(reviewDetails.description),
             reviewDetails.joint_name,
             slugify(reviewDetails.slug),
-            filename
+            `/images/reviews/${filename}`
         );
 }
