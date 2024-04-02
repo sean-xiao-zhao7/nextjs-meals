@@ -10,7 +10,7 @@ export async function addReviewDB(reviewDetails) {
     const extension = reviewDetails.image.name.split(".").pop();
     const randomStr = Math.floor(Math.random() * 10000);
     const filename = `${
-        reviewDetails.slug.replace(/\\/g, "") + randomStr
+        reviewDetails.slug.replace(/\\|\//g, "") + randomStr
     }.${extension}`;
 
     // save image to public folder
