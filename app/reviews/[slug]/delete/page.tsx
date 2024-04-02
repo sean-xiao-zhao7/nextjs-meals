@@ -1,3 +1,5 @@
+"use client";
+
 import MyButton from "@/components/button/MyButton";
 import { deleteReviewBySlugHandler } from "@/lib/delete_review";
 

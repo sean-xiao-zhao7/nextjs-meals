@@ -1,5 +1,6 @@
 import ReviewPreview from "@/components/reviews/ReviewPreview";
 import fetchAllReviews from "@/lib/fetch_reviews";
+import { Button } from "@mui/material";
 import Link from "next/link";
 import { Suspense } from "react";
 
@@ -8,7 +9,9 @@ const ReviewsElement = async () => {
 
     return (
         <>
-            <Link href="/reviews/add">Add Review</Link>
+            <Button variant="outlined" className="small-text-button">
+                <Link href="/reviews/add">Add Review</Link>
+            </Button>
             {allReviews.map(
                 (review: {
                     title: string;
