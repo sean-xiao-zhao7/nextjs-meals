@@ -3,7 +3,7 @@ import MyImagePicker from "@/components/image-picker/MyImagePicker";
 import { submitNewReviewHandler } from "@/lib/add_review";
 import { useFormState } from "react-dom";
 
-export default async function AddReview() {
+export default function AddReview() {
     const [formState, formAction] = useFormState(submitNewReviewHandler, {
         message: "",
     });

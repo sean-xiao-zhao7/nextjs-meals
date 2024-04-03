@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: any }) {
                             </Link>
                         </div>
                         <Link href="/">
-                            <h1>SeanNodis' Food Joints</h1>
+                            <h1>SeanNodis&apos; Food Joints</h1>
                         </Link>
                     </div>
                     <Menu />
