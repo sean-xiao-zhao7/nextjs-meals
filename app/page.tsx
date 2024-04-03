@@ -6,8 +6,8 @@ export default function App() {
         <main>
             <h1>Welcome Foodies!</h1>
             <p>
-                This is Seannodis' restaurants review site. You can find GTA
-                food locations honest reviews.
+                This is Seannodis&apos; restaurants review site. You can find
+                GTA food locations honest reviews.
             </p>
             <p>
                 The latest reviews are below, check Reviews on top to see all.
