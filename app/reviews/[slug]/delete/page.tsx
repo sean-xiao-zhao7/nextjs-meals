@@ -8,7 +8,9 @@ const DeleteReviewBySlug = ({ params }: { params: { slug: string } }) => {
         <>
             <MyButton
                 text="Delete this review."
-                onClick={() => deleteReviewBySlugHandler(params.slug)}
+                onClick={() =>
+                    deleteReviewBySlugHandler(decodeURI(params.slug))
+                }
             />
         </>
     );
