@@ -3,6 +3,7 @@
 import ReviewType from "@/types/reviewType";
 import { addReviewDB } from "@/db/reviews/add_review";
 import { redirect } from "next/navigation";
+import { revalidatePath } from "next/cache";
 
 export const submitNewReviewHandler = async (prevState: any, formData: any) => {
     const newReview: ReviewType = {
@@ -24,5 +25,6 @@ export const submitNewReviewHandler = async (prevState: any, formData: any) => {
     } catch (e: any) {
         console.log(e.message);
     }
+    revalidatePath("/reviews");
     redirect("/reviews");
 };
