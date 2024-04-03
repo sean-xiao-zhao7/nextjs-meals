@@ -14,7 +14,9 @@ export const submitNewReviewHandler = async (formData: any) => {
     };
 
     if (newReview.title === "") {
-        throw new Error("Title is empty");
+        return {
+            message: "Title is required.",
+        };
     }
 
     try {
