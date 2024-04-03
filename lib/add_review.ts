@@ -4,7 +4,7 @@ import ReviewType from "@/types/reviewType";
 import { addReviewDB } from "@/db/reviews/add_review";
 import { redirect } from "next/navigation";
 
-export const submitNewReviewHandler = async (formData: any) => {
+export const submitNewReviewHandler = async (prevState: any, formData: any) => {
     const newReview: ReviewType = {
         title: formData.get("title"),
         description: formData.get("description"),

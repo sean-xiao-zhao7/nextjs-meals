@@ -12,7 +12,8 @@ export default async function AddReview() {
         <main>
             <h1>Adding a new review.</h1>
             <div>
-                <form action={submitNewReviewHandler}>
+                <form action={formAction}>
+                    {formState.message && <p>{formState.message}</p>}
                     Name
                     <br />
                     <input type="text" name="title" id="name" required />
