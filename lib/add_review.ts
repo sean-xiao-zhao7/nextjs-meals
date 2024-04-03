@@ -13,6 +13,10 @@ export const submitNewReviewHandler = async (formData: any) => {
         image: formData.get("image"),
     };
 
+    if (newReview.title === "") {
+        throw new Error("Title is empty");
+    }
+
     try {
         await addReviewDB(newReview);
     } catch (e: any) {
