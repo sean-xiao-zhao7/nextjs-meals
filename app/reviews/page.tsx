@@ -4,6 +4,11 @@ import { Button } from "@mui/material";
 import Link from "next/link";
 import { Suspense } from "react";
 
+export const metadata = {
+    title: "Reviews - SeanNodis' Food Joints",
+    description: "All reviews",
+};
+
 const ReviewsElement = async () => {
     const allReviews = await fetchAllReviews();
 
