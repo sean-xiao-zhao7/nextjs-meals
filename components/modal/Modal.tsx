@@ -3,7 +3,7 @@
 import { Button } from "@mui/material";
 import { useState } from "react";
 
-export default function Modal() {
+export default function Modal({ children }: { children: any }) {
     const [showModal, setShowModal] = useState(false);
 
     const showModalHandler = () => {
@@ -19,7 +19,14 @@ export default function Modal() {
             >
                 Modal
             </Button>
-            {showModal && <div id="add-review-modal">Test</div>}
+            <div
+                id="add-review-modal"
+                className={
+                    "modal " + (showModal ? "modal-fade-in" : "modal-fade-out")
+                }
+            >
+                {children ? children : "Test"}
+            </div>
         </>
     );
 }
