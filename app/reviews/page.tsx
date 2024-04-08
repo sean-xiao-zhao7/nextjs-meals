@@ -19,7 +19,7 @@ const ReviewsElement = async () => {
             <Button variant="outlined" className="small-text-button">
                 <Link href="/reviews/add">Add Review</Link>
             </Button>
-            <Modal />
+            <Modal>Contents</Modal>
             {allReviews.map(
                 (review: {
                     title: string;

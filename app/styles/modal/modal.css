@@ -1,10 +1,23 @@
+#modal-background {
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+
 .modal {
-    top: 10%;
+    top: 50%;
+    left: 25%;
+    right: 25%;
     z-index: 10;
     position: absolute;
     border-radius: 10px;
     padding: 1.5rem;
-    width: 30rem;
+    width: auto;
     background-color: white;
 }
 
@@ -20,11 +33,13 @@
     0% {
         transform: translateY(30px);
         opacity: 0;
+        display: none;
     }
 
     100% {
         transform: translateY(0);
         opacity: 1;
+        display: block;
     }
 }
 
