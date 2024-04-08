@@ -1,8 +1,10 @@
-import ReviewPreview from "@/components/reviews/ReviewPreview";
-import fetchAllReviews from "@/lib/fetch_reviews";
 import { Button } from "@mui/material";
 import Link from "next/link";
 import { Suspense } from "react";
+
+import Modal from "@/components/modal/Modal";
+import ReviewPreview from "@/components/reviews/ReviewPreview";
+import fetchAllReviews from "@/lib/fetch_reviews";
 
 export const metadata = {
     title: "Reviews - SeanNodis' Food Joints",
@@ -17,10 +19,7 @@ const ReviewsElement = async () => {
             <Button variant="outlined" className="small-text-button">
                 <Link href="/reviews/add">Add Review</Link>
             </Button>
-            <Button variant="outlined" className="small-text-button">
-                Modal
-            </Button>
-            <div id="add-review-modal">Test</div>
+            <Modal />
             {allReviews.map(
                 (review: {
                     title: string;
