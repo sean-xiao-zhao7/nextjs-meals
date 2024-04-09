@@ -22,10 +22,14 @@ export default function Modal({ children }: { children: any }) {
             <div
                 id="modal-background"
                 className={showModal ? "modal-fade-in" : "modal-fade-out"}
+            ></div>
+            <div
+                id="add-review-modal"
+                className={
+                    showModal ? "modal modal-fade-in" : "modal modal-fade-out"
+                }
             >
-                <div id="add-review-modal" className="modal">
-                    {children ? children : "Test"}
-                </div>
+                {children ? children : "Test"}
             </div>
         </>
     );
