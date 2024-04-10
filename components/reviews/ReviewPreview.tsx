@@ -31,11 +31,11 @@ const ReviewPreview = ({
                     Share it
                 </Link>
             </Button>
-            <Button variant="outlined" className="small-text-button">
+            {/* <Button variant="outlined" className="small-text-button">
                 <Link href={`/reviews/${slug}/delete`} className="button-link">
                     Delete
                 </Link>
-            </Button>
+            </Button> */}
         </div>
     );
 };
