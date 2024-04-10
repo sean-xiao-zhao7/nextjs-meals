@@ -22,6 +22,7 @@ export default function Modal({ children }: { children: any }) {
             <div
                 id="modal-background"
                 className={showModal ? "modal-fade-in" : "modal-fade-out"}
+                onClick={showModalHandler}
             ></div>
             <div
                 id="add-review-modal"
