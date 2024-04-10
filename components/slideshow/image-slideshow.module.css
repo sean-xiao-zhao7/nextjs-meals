@@ -1,8 +1,7 @@
 .slideshow {
     position: relative;
-    width: 10rem;
-    height: auto;
-    border-radius: 8px;
+    width: 20rem;
+    height: 20rem;
     overflow: hidden;
 }
 
