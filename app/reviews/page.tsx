@@ -1,8 +1,5 @@
-import { Button } from "@mui/material";
-import Link from "next/link";
 import { Suspense } from "react";
 
-import Modal from "@/components/modal/Modal";
 import ReviewPreview from "@/components/reviews/ReviewPreview";
 import fetchAllReviews from "@/lib/fetch_reviews";
 
@@ -38,8 +35,7 @@ const ReviewsElement = async () => {
 export default function Reviews() {
     return (
         <main>
-            <h1>Reviews</h1>
-            <p>Here are all reviews. </p>
+            <h1>Latest Reviews</h1>
             <Suspense fallback={<p>Loading</p>}>
                 <ReviewsElement />
             </Suspense>

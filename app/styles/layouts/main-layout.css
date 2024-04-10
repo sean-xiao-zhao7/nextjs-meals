@@ -24,7 +24,7 @@
 }
 
 #menu-title-container h1:hover {
-    color: rgb(255, 148, 77);
+    color: rgb(204, 255, 172);
 }
 
 #main-logo-container {
@@ -70,11 +70,7 @@ menu li a {
     border-radius: 15px;
 }
 
-menu li a:hover {
+menu li a:hover,
+menu li a.active {
     background-color: #ffffff3d;
-}
-
-menu li a.active,
-menu li a:hover {
-    color: rgb(255, 148, 77);
 }
