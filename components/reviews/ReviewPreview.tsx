@@ -1,6 +1,8 @@
 import { Button } from "@mui/material";
 import Link from "next/link";
 
+import "@/app/styles/reviews/review-preview.css";
+
 const ReviewPreview = ({
     title,
     intro,
@@ -11,7 +13,7 @@ const ReviewPreview = ({
     slug: string;
 }) => {
     return (
-        <div>
+        <div className="review-preview">
             <h1>{title ? title : "Review Title"}</h1>
             <p>
                 {intro
