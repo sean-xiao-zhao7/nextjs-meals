@@ -82,7 +82,11 @@ export default function RootLayout({ children }: { children: any }) {
 
                     {children}
                 </div>
-                <footer>Footer</footer>
+                <footer>
+                    <h1>SeanNodis Food Joints</h1>
+                    <p>Find your fill. All reviews of GTA restaurants.</p>
+                    <p>Follow for more.</p>
+                </footer>
             </body>
         </html>
     );
