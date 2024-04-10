@@ -37,6 +37,7 @@
 
 #menu-logo {
     border-radius: 15px;
+    box-shadow: 1px 1px 5px 0px #636363;
 }
 
 #main-logo-link-container {
@@ -62,7 +63,7 @@ menu li a {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 2rem 3rem;
+    padding: 2rem 2.5rem;
     display: block;
     width: 100%;
     text-align: center;

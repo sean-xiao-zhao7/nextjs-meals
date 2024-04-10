@@ -20,7 +20,23 @@ export default function Menu() {
                     href={"/social"}
                     className={path.startsWith("/social") ? "active" : ""}
                 >
+                    Locations
+                </Link>
+            </li>
+            <li>
+                <Link
+                    href={"/social"}
+                    className={path.startsWith("/social") ? "active" : ""}
+                >
                     Social
+                </Link>
+            </li>
+            <li>
+                <Link
+                    href={"/social"}
+                    className={path.startsWith("/social") ? "active" : ""}
+                >
+                    Gallery
                 </Link>
             </li>
         </menu>
