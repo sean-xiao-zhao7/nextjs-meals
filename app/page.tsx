@@ -18,6 +18,18 @@ export default function App() {
                         find GTA food locations honest reviews.
                     </p>
                     <p>
+                        Welcome to detailed descriptions of food, experiences,
+                        locations, etc. This blog started out on Google Maps,
+                        and covers many aspects of food joints in the GTA.
+                    </p>
+                    <p>
+                        Each review is ranked by 5 stars, of food, ambiance, and
+                        service, just like Google reviews.
+                    </p>
+                    <p>
+                        You can find main dish, dessert, ethnic foods, various.
+                    </p>
+                    <p>
                         The latest reviews are below, check Reviews on top to
                         see all.
                     </p>
