@@ -3,23 +3,25 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-import burgerImg from "@/assets/burger.jpg";
-import curryImg from "@/assets/curry.jpg";
-import dumplingsImg from "@/assets/dumplings.jpg";
-import macncheeseImg from "@/assets/macncheese.jpg";
-import pizzaImg from "@/assets/pizza.jpg";
-import schnitzelImg from "@/assets/schnitzel.jpg";
-import tomatoSaladImg from "@/assets/tomato-salad.jpg";
+// static images
+import img1 from "@/assets/reviews/eggsmart0.jpeg";
+import img2 from "@/assets/reviews/harvey0.jpg";
+import img3 from "@/assets/reviews/ihop0.jpeg";
+import img4 from "@/assets/reviews/manpuku.jpg";
+import img5 from "@/assets/reviews/peter0.jpg";
+import img6 from "@/assets/reviews/phongocven0.jpeg";
+import img7 from "@/assets/reviews/phongocven1.jpeg";
+
 import classes from "./image-slideshow.module.css";
 
 const images = [
-    { image: burgerImg, alt: "A delicious, juicy burger" },
-    { image: curryImg, alt: "A delicious, spicy curry" },
-    { image: dumplingsImg, alt: "Steamed dumplings" },
-    { image: macncheeseImg, alt: "Mac and cheese" },
-    { image: pizzaImg, alt: "A delicious pizza" },
-    { image: schnitzelImg, alt: "A delicious schnitzel" },
-    { image: tomatoSaladImg, alt: "A delicious tomato salad" },
+    { image: img1, alt: "A delicious, juicy burger" },
+    { image: img2, alt: "A delicious, spicy curry" },
+    { image: img3, alt: "Steamed dumplings" },
+    { image: img4, alt: "Mac and cheese" },
+    { image: img7, alt: "A delicious pizza" },
+    { image: img5, alt: "A delicious schnitzel" },
+    { image: img6, alt: "A delicious tomato salad" },
 ];
 
 export default function ImageSlideshow() {
