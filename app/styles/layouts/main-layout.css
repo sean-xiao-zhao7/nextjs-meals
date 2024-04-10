@@ -19,12 +19,12 @@
 #menu-title-container h1 {
     margin: 0;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     transition: color 0.1s;
 }
 
 #menu-title-container h1:hover {
-    color: rgb(204, 255, 172);
+    color: rgb(255, 200, 0);
 }
 
 #main-logo-container {
@@ -61,7 +61,7 @@ menu li {
 menu li a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     padding: 2rem 2.5rem;
     display: block;
