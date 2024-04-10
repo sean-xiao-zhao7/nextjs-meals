@@ -1,5 +1,6 @@
 import ImageSlideShow from "@/components/slideshow/image-slideshow";
 import Reviews from "./reviews/page";
+import "@/app/styles/home/home.css";
 
 export default function App() {
     return (
@@ -9,9 +10,10 @@ export default function App() {
                     display: "flex",
                     flexDirection: "row",
                     justifyContent: "space-between",
+                    alignItems: "center",
                 }}
             >
-                <div>
+                <div id="home-page-intro">
                     <h1>Welcome Foodies!</h1>
                     <p>
                         This is Seannodis&apos; restaurants review site. You can
