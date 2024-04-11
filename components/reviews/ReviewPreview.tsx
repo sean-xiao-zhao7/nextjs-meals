@@ -23,21 +23,26 @@ const ReviewPreview = ({
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris \
                 nisi ut aliquip ex ea commodo consequat."}
             </p>
-            <Button variant="outlined" className="small-text-button">
-                <Link href={`/reviews/${slug}`} className="button-link">
-                    Check it out
-                </Link>
-            </Button>
-            <Button variant="outlined" className="small-text-button">
-                <Link href={`/reviews/${slug}/social`} className="button-link">
-                    Share it
-                </Link>
-            </Button>
-            {/* <Button variant="outlined" className="small-text-button">
+            <div className="buttons-horizontal-container">
+                <Button variant="contained" className="small-text-button">
+                    <Link href={`/reviews/${slug}`} className="button-link">
+                        Check it out
+                    </Link>
+                </Button>
+                <Button variant="contained" className="small-text-button">
+                    <Link
+                        href={`/reviews/${slug}/social`}
+                        className="button-link"
+                    >
+                        Share it
+                    </Link>
+                </Button>
+                {/* <Button variant="outlined" className="small-text-button">
                 <Link href={`/reviews/${slug}/delete`} className="button-link">
                     Delete
                 </Link>
             </Button> */}
+            </div>
         </div>
     );
 };

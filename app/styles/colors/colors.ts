@@ -3,6 +3,6 @@ export const colors = {
     mainOrange: "#f7ad0d",
     mainGreen: "#208c27",
     lightOrange: "#f7ad0d",
-    lightGreen: "#065535",
+    lightGreen: "#208c27",
     darkGreen: "rgb(14, 118, 0);",
 };
