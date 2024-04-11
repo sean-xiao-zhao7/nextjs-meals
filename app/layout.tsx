@@ -20,6 +20,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: any }) {
+    const year = new Date().getFullYear();
+
     return (
         <html lang="en">
             <body>
@@ -87,6 +89,7 @@ export default function RootLayout({ children }: { children: any }) {
                     <p>Find your fill. All reviews of GTA restaurants.</p>
                     <p>Follow for more.</p>
                     <Menu />
+                    <p id="disclaimer">&copy; SeanNodis {year}</p>
                 </footer>
             </body>
         </html>

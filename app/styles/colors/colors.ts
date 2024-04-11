@@ -4,4 +4,5 @@ export const colors = {
     mainGreen: "#208c27",
     lightOrange: "#f7ad0d",
     lightGreen: "#065535",
+    darkGreen: "rgb(14, 118, 0);",
 };
