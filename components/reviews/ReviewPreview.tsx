@@ -15,7 +15,7 @@ const ReviewPreview = ({
     return (
         <div className="review-preview">
             <h1>{title ? title : "Review Title"}</h1>
-            <p>
+            <p className="intro">
                 {intro
                     ? intro
                     : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \
@@ -34,7 +34,7 @@ const ReviewPreview = ({
                         href={`/reviews/${slug}/social`}
                         className="button-link"
                     >
-                        Share it
+                        Share
                     </Link>
                 </Button>
                 {/* <Button variant="outlined" className="small-text-button">
