@@ -1,9 +1,16 @@
 footer {
     background: radial-gradient(#1c6d22, #065535);
-    padding: 4rem 5rem 3rem;
+    padding: 3rem 5rem 3rem;
     color: white;
 }
 
 footer menu {
+    margin-top: 2rem;
+    padding-top: 0.5rem;
     justify-content: space-evenly;
+    border-top: solid 1px rgb(14, 118, 0);
+}
+
+footer menu li a {
+    font-size: 1.4rem;
 }
