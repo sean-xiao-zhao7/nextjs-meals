@@ -1,6 +1,6 @@
 footer {
     background: radial-gradient(#1c6d22, #065535);
-    padding: 4rem 5rem 3rem;
+    padding: 4rem 5rem 4rem;
     color: white;
 }
 
@@ -18,7 +18,11 @@ footer menu li a {
 footer #disclaimer {
     margin-top: 0.5rem;
     border-top: solid 1px rgb(14, 118, 0);
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-align: center;
     color: rgb(125, 182, 119);
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    justify-content: center;
+    grid-column-gap: 3rem;
 }

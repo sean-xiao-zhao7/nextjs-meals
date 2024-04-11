@@ -89,7 +89,14 @@ export default function RootLayout({ children }: { children: any }) {
                     <p>Find your fill. All reviews of GTA restaurants.</p>
                     <p>Follow for more.</p>
                     <Menu />
-                    <p id="disclaimer">&copy; SeanNodis {year}</p>
+                    <div id="disclaimer">
+                        <p>Contact</p>
+                        <p>Advertise</p>
+                        <p>Story</p>
+                        <p>Partners</p>
+                        <p>Policy</p>
+                        <p>&copy; SeanNodis {year}</p>
+                    </div>
                 </footer>
             </body>
         </html>
