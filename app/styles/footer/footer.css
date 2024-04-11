@@ -1,5 +1,9 @@
 footer {
     background: radial-gradient(#1c6d22, #065535);
-    padding: 5rem;
+    padding: 4rem 5rem 3rem;
     color: white;
+}
+
+footer menu {
+    justify-content: space-evenly;
 }
