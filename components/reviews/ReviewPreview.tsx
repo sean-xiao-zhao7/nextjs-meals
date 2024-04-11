@@ -37,6 +37,14 @@ const ReviewPreview = ({
                         Share
                     </Link>
                 </Button>
+                <Button variant="contained" className="small-text-button">
+                    <Link
+                        href={`/reviews/${slug}/social`}
+                        className="button-link"
+                    >
+                        Save
+                    </Link>
+                </Button>
                 {/* <Button variant="outlined" className="small-text-button">
                 <Link href={`/reviews/${slug}/delete`} className="button-link">
                     Delete
