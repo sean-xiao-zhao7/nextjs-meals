@@ -17,8 +17,8 @@ export default function Menu() {
             </li>
             <li>
                 <Link
-                    href={"/social"}
-                    className={path.startsWith("/social") ? "active" : ""}
+                    href={"/locations"}
+                    className={path.startsWith("/locations") ? "active" : ""}
                 >
                     Locations
                 </Link>
@@ -33,8 +33,8 @@ export default function Menu() {
             </li>
             <li>
                 <Link
-                    href={"/social"}
-                    className={path.startsWith("/social") ? "active" : ""}
+                    href={"/gallery"}
+                    className={path.startsWith("/gallery") ? "active" : ""}
                 >
                     Gallery
                 </Link>
