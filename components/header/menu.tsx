@@ -18,13 +18,15 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
     };
 
     const hideFixedMenu = () => {
-        setMenuFixed("");
+        setMenuFixed("static");
     };
 
     return (
         <motion.div
             onViewportLeave={showFixedMenu}
             onViewportEnter={hideFixedMenu}
+            layout
+            layoutScroll
         >
             <div id="menu-container" className={fixed ? menuFixed : ""}>
                 <div id="menu-title-container">
