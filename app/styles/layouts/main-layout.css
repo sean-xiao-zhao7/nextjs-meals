@@ -7,6 +7,15 @@
     justify-content: space-between;
 }
 
+#menu-container.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #208c27ed;
+    z-index: 10;
+}
+
 #menu-title-container {
     display: flex;
     align-items: center;
@@ -53,6 +62,7 @@ menu {
     margin: 0;
     padding: 0;
 }
+
 menu li {
     list-style: none;
     margin-left: 1rem;

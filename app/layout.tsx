@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 // components
 import Menu from "@/components/header/menu";
 
@@ -9,10 +7,6 @@ import "./styles/layouts/main-layout.css";
 import "./styles/images/images.css";
 import "./styles/headings/headings.css";
 import "./styles/footer/footer.css";
-
-// images
-import mainLogo from "@/assets/logo_sean.png";
-import Link from "next/link";
 
 export const metadata = {
     title: "SeanNodis' Food Joints",
@@ -61,26 +55,8 @@ export default function RootLayout({ children }: { children: any }) {
                             ></path>
                         </svg>
                     </div>
-                    <div id="menu-container">
-                        <div id="menu-title-container">
-                            <div id="main-logo-container">
-                                <Link href="/" id="main-logo-link-container">
-                                    <Image
-                                        src={mainLogo}
-                                        alt="Main logo"
-                                        id="menu-logo"
-                                        fill={true}
-                                        sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 5vw"
-                                        priority={true}
-                                    />
-                                </Link>
-                            </div>
-                            <Link href="/">
-                                <h1>SeanNodis&apos; Food Joints</h1>
-                            </Link>
-                        </div>
-                        <Menu />
-                    </div>
+
+                    <Menu />
 
                     {children}
                 </div>
