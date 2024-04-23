@@ -56,7 +56,7 @@ export default function RootLayout({ children }: { children: any }) {
                         </svg>
                     </div>
 
-                    <Menu />
+                    <Menu fixed={true} />
 
                     {children}
                 </div>

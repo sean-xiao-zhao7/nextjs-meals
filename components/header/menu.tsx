@@ -11,14 +11,14 @@ import { useState } from "react";
 
 export default function Menu({ fixed }: { fixed?: boolean }) {
     const path = usePathname();
-    const [menuFixed, setMenuFixed] = useState(false);
+    const [menuFixed, setMenuFixed] = useState("");
 
     const showFixedMenu = () => {
-        setMenuFixed(true);
+        setMenuFixed("fixed");
     };
 
     const hideFixedMenu = () => {
-        setMenuFixed(false);
+        setMenuFixed("");
     };
 
     return (
@@ -26,7 +26,7 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
             onViewportLeave={showFixedMenu}
             onViewportEnter={hideFixedMenu}
         >
-            <div id="menu-container" className={fixed ? "fixed" : ""}>
+            <div id="menu-container" className={fixed ? menuFixed : ""}>
                 <div id="menu-title-container">
                     <div id="main-logo-container">
                         <Link href="/" id="main-logo-link-container">
