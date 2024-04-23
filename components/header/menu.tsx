@@ -22,11 +22,12 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
     };
 
     return (
-        <motion.div
-            onViewportLeave={showFixedMenu}
-            onViewportEnter={hideFixedMenu}
-        >
-            <div id="menu-title-container">
+        <>
+            <motion.div
+                id="menu-title-container"
+                onViewportLeave={showFixedMenu}
+                onViewportEnter={hideFixedMenu}
+            >
                 <div id="main-logo-container">
                     <Link href="/" id="main-logo-link-container">
                         <Image
@@ -85,7 +86,7 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
                         </Link>
                     </li>
                 </menu>
-            </div>
+            </motion.div>
             {fixed && menuFixed && (
                 <motion.div
                     id="menu-container"
@@ -163,6 +164,6 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
                     </div>
                 </motion.div>
             )}
-        </motion.div>
+        </>
     );
 }
