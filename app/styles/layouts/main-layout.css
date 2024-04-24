@@ -22,6 +22,13 @@
     align-items: center;
 }
 
+.fixed #menu-title-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content max-content 80%;
+    justify-items: center;
+}
+
 #menu-title-container a {
     text-decoration: none;
 }
@@ -97,7 +104,8 @@ menu li a {
 
 .fixed menu li a {
     font-size: 1.4rem;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0;
 }
 
 menu li a:hover,
