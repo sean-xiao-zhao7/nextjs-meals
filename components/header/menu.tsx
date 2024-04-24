@@ -51,8 +51,8 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
                 <motion.div
                     id="menu-container"
                     className="fixed"
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
                 >
                     <div id="menu-title-container">
                         <div id="main-logo-container">

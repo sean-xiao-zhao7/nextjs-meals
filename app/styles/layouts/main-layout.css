@@ -33,6 +33,10 @@
     transition: color 0.1s;
 }
 
+.fixed #menu-title-container h1 {
+    font-size: 1.6rem;
+}
+
 #menu-title-container h1:hover {
     color: rgb(255, 200, 0);
 }
@@ -40,7 +44,7 @@
 #main-logo-container {
     position: relative;
     width: 100px;
-    height: 100%;
+    height: auto;
     margin-right: 1.5rem;
 }
 
@@ -59,6 +63,11 @@
     display: block;
     height: 6rem;
     width: 100%;
+}
+
+.fixed #main-logo-link-container {
+    height: 5rem;
+    width: 5rem;
 }
 
 menu {
@@ -84,6 +93,11 @@ menu li a {
     text-align: center;
     transition: background-color 0.1s;
     border-radius: 15px;
+}
+
+.fixed menu li a {
+    font-size: 1.4rem;
+    padding: 1.5rem 2.5rem;
 }
 
 menu li a:hover,
