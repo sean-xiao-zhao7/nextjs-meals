@@ -1,16 +1,17 @@
 "use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+// comps
+import MenuItems from "./menu-items";
+
 // images
 import mainLogo from "@/assets/logo_sean.png";
 
-import { usePathname } from "next/navigation";
-import { useState } from "react";
-
 export default function Menu({ fixed }: { fixed?: boolean }) {
-    const path = usePathname();
     const [menuFixed, setMenuFixed] = useState(false);
 
     const showFixedMenu = () => {
@@ -43,49 +44,7 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
                 <Link href="/">
                     <h1>SeanNodis&apos; Food Joints</h1>
                 </Link>
-
-                <menu>
-                    <li>
-                        <Link
-                            href={"/reviews"}
-                            className={
-                                path.startsWith("/reviews") ? "active" : ""
-                            }
-                        >
-                            Reviews
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            href={"/locations"}
-                            className={
-                                path.startsWith("/locations") ? "active" : ""
-                            }
-                        >
-                            Locations
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            href={"/social"}
-                            className={
-                                path.startsWith("/social") ? "active" : ""
-                            }
-                        >
-                            Social
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            href={"/gallery"}
-                            className={
-                                path.startsWith("/gallery") ? "active" : ""
-                            }
-                        >
-                            Gallery
-                        </Link>
-                    </li>
-                </menu>
+                <MenuItems />
             </motion.div>
             {fixed && menuFixed && (
                 <motion.div
@@ -111,56 +70,7 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
                             <h1>SeanNodis&apos; Food Joints</h1>
                         </Link>
 
-                        <menu>
-                            <li>
-                                <Link
-                                    href={"/reviews"}
-                                    className={
-                                        path.startsWith("/reviews")
-                                            ? "active"
-                                            : ""
-                                    }
-                                >
-                                    Reviews
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href={"/locations"}
-                                    className={
-                                        path.startsWith("/locations")
-                                            ? "active"
-                                            : ""
-                                    }
-                                >
-                                    Locations
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href={"/social"}
-                                    className={
-                                        path.startsWith("/social")
-                                            ? "active"
-                                            : ""
-                                    }
-                                >
-                                    Social
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href={"/gallery"}
-                                    className={
-                                        path.startsWith("/gallery")
-                                            ? "active"
-                                            : ""
-                                    }
-                                >
-                                    Gallery
-                                </Link>
-                            </li>
-                        </menu>
+                        <MenuItems />
                     </div>
                 </motion.div>
             )}

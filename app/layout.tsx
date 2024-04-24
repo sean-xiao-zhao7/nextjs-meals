@@ -1,5 +1,6 @@
 // components
 import Menu from "@/components/header/menu";
+import MenuItems from "@/components/header/menu-items";
 
 // styles
 import "./globals.css";
@@ -64,7 +65,7 @@ export default function RootLayout({ children }: { children: any }) {
                     <h1>SeanNodis Food Joints</h1>
                     <p>Find your fill. All reviews of GTA restaurants.</p>
                     <p>Follow for more.</p>
-                    <Menu />
+                    <MenuItems />
                     <div id="disclaimer">
                         <p>Contact</p>
                         <p>Advertise</p>
