@@ -38,6 +38,7 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
                             fill={true}
                             sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 5vw"
                             priority={true}
+                            objectFit="cover"
                         />
                     </Link>
                 </div>
