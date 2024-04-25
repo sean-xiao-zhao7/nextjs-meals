@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 // comps
 import MenuItems from "./menu-items";
@@ -23,18 +23,19 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
     };
 
     return (
-        <>
+        <AnimatePresence>
             <motion.div
-                id="menu-title-container"
+                className="menu-title-container"
                 onViewportLeave={showFixedMenu}
                 onViewportEnter={hideFixedMenu}
+                key={"menu-title-container"}
             >
-                <div id="main-logo-container">
-                    <Link href="/" id="main-logo-link-container">
+                <div className="main-logo-container">
+                    <Link href="/" className="main-logo-link-container">
                         <Image
                             src={mainLogo}
                             alt="Main logo"
-                            id="menu-logo"
+                            className="menu-logo"
                             fill={true}
                             sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 5vw"
                             priority={true}
@@ -49,18 +50,21 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
             </motion.div>
             {fixed && menuFixed && (
                 <motion.div
-                    id="menu-container"
-                    className="fixed"
+                    className="menu-container fixed"
                     initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    animate={{
+                        opacity: 1,
+                    }}
+                    exit={{ opacity: 0 }}
+                    key={"menu-title-container-fixed"}
                 >
-                    <div id="menu-title-container">
-                        <div id="main-logo-container">
-                            <Link href="/" id="main-logo-link-container">
+                    <div className="menu-title-container">
+                        <div className="main-logo-container">
+                            <Link href="/" className="main-logo-link-container">
                                 <Image
                                     src={mainLogo}
                                     alt="Main logo"
-                                    id="menu-logo"
+                                    className="menu-logo"
                                     fill={true}
                                     sizes="(max-width: 768px) 10vw, (max-width: 1200px) 10vw, 5vw"
                                     priority={true}
@@ -75,6 +79,6 @@ export default function Menu({ fixed }: { fixed?: boolean }) {
                     </div>
                 </motion.div>
             )}
-        </>
+        </AnimatePresence>
     );
 }
