@@ -1,9 +1,9 @@
 import { Suspense } from "react";
 
-import ReviewPreview from "@/components/reviews/ReviewPreview";
 import fetchAllReviews from "@/lib/fetch_reviews";
 
 import "@/app/styles/reviews/reviews.css";
+import ClientReviews from "@/components/reviews/ClientReviews";
 
 export const metadata = {
     title: "Reviews - SeanNodis' Food Joints",
@@ -13,25 +13,7 @@ export const metadata = {
 const ReviewsElement = async () => {
     const allReviews = await fetchAllReviews();
 
-    return (
-        <>
-            {allReviews.map(
-                (review: {
-                    title: string;
-                    description: string;
-                    joint_name: string;
-                    slug: string;
-                }) => (
-                    <ReviewPreview
-                        key={review.slug}
-                        title={review.title}
-                        intro={review.description}
-                        slug={review.slug}
-                    />
-                )
-            )}
-        </>
-    );
+    return <ClientReviews reviews={allReviews} />;
 };
 
 export default function Reviews() {
