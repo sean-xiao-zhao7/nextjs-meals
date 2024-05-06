@@ -8,6 +8,7 @@ import "./styles/layouts/main-layout.css";
 import "./styles/images/images.css";
 import "./styles/headings/headings.css";
 import "./styles/footer/footer.css";
+import "./styles/reviews/reviews.css";
 
 export const metadata = {
     title: "SeanNodis' Food Joints",
